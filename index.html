@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-slate-900 text-slate-200 p-4">
+    <main class="max-w-3xl mx-auto">
+        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6">
+            <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">01</div>
+            <h3 class="font-bold text-white uppercase text-xs">Inicializar Proyecto</h3>
+            <div class="bg-black/60 p-4 rounded font-mono text-emerald-400 text-sm border-l-4 border-indigo-500 mt-3">
+                mkdir proyecto-git<br>
+                cd proyecto-git <br>
+                git init
+            </div>          
+        </div>
+
+        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6">
+            <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">02</div>
+            <h3 class="font-bold text-white uppercase text-xs">Primer commit local</h3>
+            <div class="bg-black/60 p-4 rounded font-mono text-emerald-400 text-sm border-l-4 border-indigo-500 mt-3">
+                git add .<br>
+                git commit -m "proyecto base"
+            </div>          
+        </div>
+
+        <div class="bg-slate-800/40 border border-dashed border-amber-500 rounded-xl p-5 mb-6">
+            <div class="bg-amber-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">02</div>
+            <h3 class="font-bold text-amber-400 uppercase text-xs italic text-sm">Crear repo en Github (Web)</h3>
+            <p class="text-slate-500 text-[11px] mt-1 italic">Crear un repositorio remoto en Github</p>         
+        </div>
+
+        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6">
+            <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">04</div>
+            <h3 class="font-bold text-white uppercase text-xs">Vincular con la nube (github)</h3>
+            <div class="bg-black/60 p-4 rounded font-mono text-indigo-300 text-sm border-l-4 border-indigo-400 mt-3">
+                git remote add origin <span class="text-white">URL_DEL_REPO_REMOTO</span> 
+            </div>          
+        </div>
+
+        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6">
+            <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">05</div>
+            <h3 class="font-bold text-white uppercase text-xs">El gran push</h3>
+            <div class="bg-black/60 p-4 rounded font-mono text-indigo-300 text-sm border-l-4 border-white mt-3">
+                <span class="text-white">git push origin master</span> 
+            </div>          
+        </div>
+
+        <div class="bg-slate-800/40 border border-slate-700 rounded-xl p-5 mb-6">
+            <div class="bg-indigo-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mb-3">01</div>
+            <h3 class="font-bold text-white uppercase text-xs">Actualización (Nuevos cambios)</h3>
+            <div class="bg-black/60 p-4 rounded font-mono text-emerald-400 text-sm border-l-4 border-indigo-500 mt-3">
+                git add .<br>
+                git commit -m "nuevo cambio" <br>
+                git push origin master
+            </div>          
+        </div>
+
+    </main>
+</body>
+</html>
